@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 </head>
 
 <body bgcolor=#000000>
@@ -94,7 +95,11 @@ This website is largely adapted from the PS70 documentation website created by <
 </p>
   
   </div>
-
+<script>
+  window.addEventListener("load", (event) => {
+      new cursoreffects.trailingCursor();
+  });
+</script>
 </body>
 <link rel="stylesheet" href="style.css">
 
