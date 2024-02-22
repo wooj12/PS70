@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 </head>
 
 <body bgcolor=#000000>
@@ -165,6 +166,11 @@ With more steady practice on Arduino, I'm hoping to program the other projects I
 
   </div>
 
+<script>
+  window.addEventListener("load", (event) => {
+      new cursoreffects.emojiCursor({ emoji: ["🔴", "🟢", "🔵"] });
+  });
+</script>
 
 
 </body>
