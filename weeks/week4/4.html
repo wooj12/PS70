@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>week 4 of ps70 with woojin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor=#000000>
+  
+  <div>
+    <pre>
+/week four: microcontroller programming
+    </pre>
+  </div>
+  
+
+  
+  <div>
+    <pre style="color:gray">
+# arduino project ideas & first attempt
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+    <p>
+I began this week by thinking of a suite of potentially interlinking (e.g. humidifier changes LED) microcontroller programming projects that could complement the mist maker:
+</p>
+
+<p>
+- propeller fan to control the speed of mist diffusion 
+</p>
+<p>
+- multi-color LED lights to provide vibrancy to the fog
+</p>
+<p>
+- humidity and temperature sensing
+</p>
+<p>
+- on/off switch for the humidifier
+</p>
+<p>
+- water level indicator 
+</p>
+<p>
+- voice control integration
+</p>
+
+<p>
+I ran with my first idea, which was to build in speed controls into a fan and add 3 LED lights of different colors that would light up depending on the speed of the fan. 
+</p>
+
+<p>
+<img src="motor1.png" width="500" alt="fan attempt">
+</p>
+
+<p>
+For the first while of tinkering, I worked with a fan I found in one of the closet shelves. Bobby suggested I try attaching the fan to the driver motor to make it easy to control the motors, but we soon found out that the fan ran on 12V and so it couldn’t be powered. Figuratively and literally, I decided to shelve the fan idea for now, and return to it at a later point.
+</p>
+
+<p>
+As a second project, while looking at the various LED options available in the lab, I was interested in the RGB options, given that I could play around with variations of the color wheel.
+</p>
+
+<p>
+<img src="colorwheel.png" width="500" alt="color wheel">
+</p>
+
+<p>
+<img src="ledbulb.png" width="500" alt="color wheel">
+</p>
+
+<p>
+I found a <a href="https://www.instructables.com/RGB-LED-Color-Mixing/">reference project</a> which essentially blinks three different colors (red, green, and blue) in various sequences as programmed. Since I had out a potentiometer for the fan already, I thought it would be cool to play around with the dials to change the degree of each RGB LED color. The idea was that depending on how much of each dial you crank, you would end up with a different color/mix as shown in the color wheel above. 
+</p>
+
+  </div>
+
+  <div>
+    <pre style="color:gray">
+# the circuit
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+    <p>
+Here is the circuit diagram I first made:
+</p>
+
+    <p>
+<img src="diagram.png" width="500" alt="color wheel">
+</p>
+
+    <p>
+Three potentiometers would each control the color degree of each bulb (red, green, blue), with each LED arm connected to a 10k resistor. The remaining lines represent wires that connect the circuit. Put together, the circuit is here as follows:
+</p>
+
+    <p>
+<img src="lights1.png" width="500" alt="color wheel">
+</p>
+
+  <div>
+    <pre style="color:gray">
+# arduino programming
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+    <p>
+Building from Kassia's code tutorials from our lab in which we added potentiometers to a single LED and programmed a button, I identified each LED with its port, and further added the serial print function to show the changing of the values (0-255) on the serial monitor.
+</p>
+
+    <p>
+<img src="code1.png" width="500" alt="color wheel">
+</p>
+
+    <p>
+<img src="code2.png" width="500" alt="color wheel">
+</p>
+
+  </div>
+
+  <div>
+    <pre style="color:gray">
+# final product
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+    <p>
+After reconfiguring and readjusting the LED lights (which were initially not plugged in deep enough), here is my final product:
+
+ <p>
+<img src="monitor.GIF" width="500" alt="color wheel">
+</p>
+
+    <p>
+<img src="colorwheel.GIF" width="500" alt="color wheel">
+</p>
+
+ <p>
+With the humidifier in place, this is how the color of the fog/mist might change according to the LED light controls:
+</p>
+    <p>
+<img src="mistmaker.png" width="500" alt="color wheel">
+</p>
+
+
+
+ <p>
+While working on my project this week, I also 3D printed a Flexi-Rex on the side to see how the internal chain linkage mechanism works:
+</p>
+
+    <p>
+<img src="flexirex.png" width="500" alt="color wheel">
+</p>
+
+ <p>
+With more steady practice on Arduino, I'm hoping to program the other projects I listed at the beginning of this post, especially with 3D printed parts. More to come on Arduino programming in the following weeks!
+</p>
+
+
+
+  </div>
+
+
+
+</body>
+
+<link rel="stylesheet" href="../../style.css">
+
+</html>
