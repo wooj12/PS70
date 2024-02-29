@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>week 5 of ps70 with woojin</title> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+</head>
+
+<body bgcolor=#000000>
+  
+  <div>
+    <pre>
+/week 5: 3D design & printing
+    </pre>
+  </div>
+  
+
+  
+  <div>
+    <pre style="color:gray">
+# 3d scanning & photogrammetry
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+
+<p>
+After some trouble trying to get the in-classroom scanner to work, Aaron, Finn, and I decided to split a membership for <a href="https://poly.cam/">Polycam</a>, which markets itself as the "leading 3D capture application for iPhone... generat[ing] scans of spaces with the LiDAR sensor." With only a series of photos taken around the object, I scanned my Sony camera and lens to an impressive result, despite the slight mis-scan of the cap-tip. 
+</p>
+
+<p>
+<img src="sonycam.GIF" width="500" alt="sony camera">
+</p>
+
+<p>
+That said, upon importing the image into a STL file on the PrusaSlicer, there were more noticeable, obvious issues, including sizing (scan not fit to size), not properly printing the bottom of the camera (uncaptured in the photos), as well as some additional grain, which happened to be splattered all over the slicer. For simpler scans, Polycam might be a great go-to option, though for more intricate scans, the in-classroom scanner might be the way to go.
+</p>
+
+<p>
+<img src="polycam.png" width="500" alt="sony camera">
+</p>
+
+  <div>
+    <pre style="color:gray">
+# 3D design & printing
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+
+<p>
+Inspired by a 3D “wigglegram” lens I found online first ideated and created by <a href="https://www.georgemoua.com/3d-wiggle-lens">George Moua</a> in 2021 (via a kickstarter project that currently does not print lenses anymore, I decided to build my own "wigglegram" camera with three used disposable camera lenses to accompany my Sony camera.
+</p>
+
+<p>
+<img src="moua.png" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+I started off by referencing existing open-sourced versions of the wigglegram camera, including this version on Printables by <a href="https://www.printables.com/model/301418-sony-e-mount-wigglegram-lens/files">Alex Fiel</a>. However, this model had its shortcomings: the lenses had to be trimmed given the tight cylindrical framing of the print and then either hot-glued to the edges or superglued.
+</p>
+
+<p>
+<img src="model.png" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+Loosely based on this mechanism, but recognizing the issues, I set out to build my own better <a download href='wigglegram.stl'>version (STL file)</a>. Modeling out the wigglegram lens was quite straightforward: one lens front (thinner cylinder) and one lens retainer (thicker cylinder) — both of which, tightened by four 2mm screws, would hold three disposable lenses in place. This would be supplanted by a mount that was measured with dimensions so as to be compatible with the Sony Alpha series. Getting the right measurements and modeling out the lens mount was the most difficult part.
+</p>
+
+<p>
+<img src="wigglegram.png" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+<img src="wigglegram2.png" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+During the 3D printing process itself, I learned the importance of enabling supports (and brim), even though the supports may sometimes result in a hassle to take apart. After taking apart the disposable cameras, I assembled them with the lens mount. 
+</p>
+
+<p>
+<img src="wigglegram.jpg" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+<img src="wigglegram3.png" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+These are images I took with this lens on my Sony camera (shoutout to Aaron for being a good model):
+</p>
+
+<p>
+<img src="photo1.jpg" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+<img src="photo2.jpg" width="500" alt="wigglegram camera">
+</p>
+
+<p>
+<img src="photo3.jpg" width="500" alt="wigglegram camera">
+</p>
+
+
+<p>
+Perhaps I hadn’t properly cleaned/spaced/added distance the three blockers to the point at which the images were instead filtered in an intriguing way, though not split the way I initially envisioned. I could play around more with the design, and hopefully get the original concept to work. As next steps, I can also add on a focus lens (a tab that allows me to zoom in and out, adjusting manual focus) and  <a href="https://www.boredpanda.com/i-3d-printed-a-camera-lens-with-aperture-during-lockdown/">aperture adjustment</a>.
+</p>
+
+  </div>
+
+  <div>
+    <pre style="color:gray">
+# final project ideation
+    </pre>
+    <pre style="color:gray">
+# ---------------------------------
+  </pre>
+
+<p>
+To be honest, I think I've grown out of the initial wellness kit idea I've proposed (e.g. humidifier, sauna, etc.) — existing options are already relatively cheap and abundant. I spent a good chunk of this week looking at other arduino & 3dprinting-involved photography projects, including this 3D printed film video camera by <a href="https://joshuabird.com/blog/post/3d-printed-film-video-camera">Joshua Bird</a> who also built his own version of the wigglegram lens. That said, going through his page made me think this might be too expensive and not-worth-it project.
+</p>
+
+<p>
+Given this pivot, I'll be spending this weekend figuring this out (and designing initial models) in time for labs next week!
+</p>
+
+  </div>
+
+<script>
+  window.addEventListener("load", (event) => {
+      new cursoreffects.ghostCursor();
+  });
+</script>
+
+</body>
+
+<link rel="stylesheet" href="../../style.css">
+
+</html>
